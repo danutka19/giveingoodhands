@@ -1,0 +1,29 @@
+.container {
+  &__contact {
+    height: 1026px;
+    background-image: url("../../assets/Background-Contact-Form.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 50px;
+  }
+}
+
+.right__header {
+  h5 {
+    display: block;
+    margin: 20px;
+    font-size: 52px;
+    font-weight: lighter;
+    text-align: center;
+  }
+}
+
+.container__contact_right {
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: flex-end;
+  height: 1000px;
+}

@@ -1,0 +1,15 @@
+@import "settings/fonts";
+@import "settings/colors";
+@import "generic/reset";
+@import "elements/homeheader";
+@import "elements/homethreecolumns";
+@import "elements/homefoursteps";
+@import "elements/homeaboutus";
+@import "elements/homecontactus";
+
+.container {
+  font-family: $font-base;
+  max-width: 1900px;
+  margin: 0 auto;
+  border: 2px solid hotpink;
+}
