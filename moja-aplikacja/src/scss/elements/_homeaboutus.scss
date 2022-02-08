@@ -32,6 +32,9 @@
       height: 100%;
       width: 50%;
       background-image: url("../../assets/People.jpg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: cover;
     }
   }
 }

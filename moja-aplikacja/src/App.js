@@ -1,10 +1,27 @@
 import React, {useEffect, useState} from "react";
 import {Home} from "./components/Home";
+import {LoginIn} from "./components/LoginIn";
+import {Register} from "./components/Register";
+import {LogOut} from "./components/Logout"
+import {GiveStaffBack} from "./components/GiveStaffBack";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Home />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="login" element={<LoginIn />} />
+      <Route path="register" element={<Register />} />
+      <Route path="wylogowano" element={<LogOut />} />
+      <Route path="oddaj-rzeczy" element={<GiveStaffBack />} />
+    </Routes>
   );
 }
 
 export default App;
+
+// <Routes>
+//   <Route path="/" element={<HoistPage onNewCapacity={addNewCapacity} />} />
+//   <Route path="drawing" element={<BodyPage drawingP={drawing} capacityP={capacityX} addToBasket={onNewNumbers} />} />
+//   <Route path="order" element={<FormOrder drawingP={drawing} sparesP={spares} />} />
+// </Routes>

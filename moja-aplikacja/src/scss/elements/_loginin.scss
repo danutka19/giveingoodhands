@@ -1,0 +1,76 @@
+.container {
+  &__login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: center;
+    font-weight: lighter;
+    height: 100%;
+    margin: 0 auto;
+    &-header {
+      align-self: center;
+      margin: 80px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h5 {
+        font-size: 38px;
+        font-weight: lighter;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
+    &-form {
+      align-self: center;
+      margin: 80px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+    }
+  }
+}
+
+.form {
+  &__input {
+    font-size: 22px;
+    background-color: hsla(180, 0%, 50%, 0.3);
+    padding: 80px;
+    &_email, &_password {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      border: transparent;
+      border-bottom: 1px solid $color-lightgrey;
+    }
+  }
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    margin: 30px;
+  }
+}
+
+input {
+  font-size: 18px;
+  height: 3em;
+  border: transparent;
+  border-bottom: 1px solid $color-lightgrey;
+  background-color: transparent;
+  &:enabled, &:checked {
+    border: transparent;
+    border-bottom: 1px solid $color-lightgrey;
+    background-color: transparent;
+  }
+}
+
+.btn {
+  &__logout {
+    align-self: center;
+    margin-bottom: 30px;
+  }
+}

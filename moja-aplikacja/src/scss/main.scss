@@ -6,10 +6,18 @@
 @import "elements/homefoursteps";
 @import "elements/homeaboutus";
 @import "elements/homecontactus";
+@import "elements/homeorganizations";
+@import "elements/loginin";
 
 .container {
   font-family: $font-base;
-  max-width: 1900px;
+  max-width: 3000px;
   margin: 0 auto;
-  border: 2px solid hotpink;
 }
+
+.hidden {
+  display: none;
+}
+
+
+

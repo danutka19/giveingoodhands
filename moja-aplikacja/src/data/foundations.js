@@ -1,0 +1,57 @@
+export default [
+    {
+        name: "Fundacja Dobroczynności",
+        id: 269648,
+        web: "https://fundacjadobro.pl/",
+        description: "Pomoc osobom starszym i chorym",
+        needs: "ubrania, jedzenie, ciepłe koce",
+        krs: "0000269648",
+    },
+    {
+        name: "Fundacja DLA DZIECI",
+        id: 64255,
+        web: "https://fundacjadobro.pl/",
+        description: "Pomoc dzieciom z ubogich rodzin",
+        needs: "ubrania, meble, zabawki",
+        krs: "0000064255",
+    },
+    {
+        name: "Fundacja Pomocy Dzieciom Pociecha",
+        id: 426589,
+        web: "www.fundacjapociecha.pl",
+        description: "Pomoc dla dzieci.",
+        needs: "ubrania, meble, zabawki",
+        krs: "0000426589",
+    },
+    {
+        name: "Fundacja Nasze Dzieci",
+        id: 854123,
+        web: "www.fundacjapociecha.pl",
+        description: "Pomoc dla dzieci.",
+        needs: "ubrania, meble, zabawki",
+        krs: "0000854123",
+    },
+    {
+        name: "Fundacja Nasze Dzieci",
+        id: 8541423,
+        web: "www.fundacjapociecha.pl",
+        description: "Pomoc dla dzieci.",
+        needs: "ubrania, meble, zabawki",
+        krs: "0000854123",
+    },   {
+        name: "Fundacja Nasze Dzieci",
+        id: 8541233,
+        web: "www.fundacjapociecha.pl",
+        description: "Pomoc dla dzieci.",
+        needs: "ubrania, meble, zabawki",
+        krs: "0000854123",
+    },
+    {
+        name: "Fundacja Nasze Dzieci",
+        id: 8541232,
+        web: "www.fundacjapociecha.pl",
+        description: "Pomoc dla dzieci.",
+        needs: "ubrania, meble, zabawki",
+        krs: "0000854123",
+    }
+]

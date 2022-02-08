@@ -1,0 +1,71 @@
+.container {
+  &__organizations {
+    height: 935px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    h5 {
+      font-size: 38px;
+      font-weight: lighter;
+      height: 52px;
+      margin-top: 64px;
+    }
+    &-list {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      div {
+        height: 72px;
+        width: 208px;
+        padding: 0 50px;
+        &:hover {
+          border: 1px solid $color-lightgrey;
+        }
+      }
+    }
+    &-name {
+      border-bottom: 1px solid $color-lightgrey;
+      font-size: 26px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+      width: 1324px;
+      margin-bottom: 30px;
+      li {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-bottom: 30px;
+      }
+      span {
+        font-size: 18px;
+      }
+    }
+    &-text {
+      font-size: 24px;
+      width: 640px;
+      height: 94px;
+    }
+    &-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+        margin: 10px;
+        padding-top: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid transparent;
+        text-align: center;
+        &:hover {
+          border: 1px solid $color-lightgrey;
+        }
+
+      }
+    }
+  }
+}

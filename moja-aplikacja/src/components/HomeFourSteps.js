@@ -4,10 +4,10 @@ import icon1 from "../assets/Icon-1.svg";
 import icon2 from "../assets/Icon-2.svg";
 import icon3 from "../assets/Icon-3.svg";
 import icon4 from "../assets/Icon-4.svg";
+import {Link} from "react-router-dom";
 
 export const HomeFourSteps = () => {
     return (
-
         <section className={"container container__steps"}>
             <h3>Wystarczą 4 proste kroki</h3>
             <div><img src={img}/></div>
@@ -38,9 +38,10 @@ export const HomeFourSteps = () => {
                 </div>
             </div>
             <div className="container__ul">
-                <div>Oddaj rzeczy</div>
+                <div>
+                    <Link className="btn" to="/login">Oddaj rzeczy</Link>
+                </div>
              </div>
         </section>
-
     )
 }

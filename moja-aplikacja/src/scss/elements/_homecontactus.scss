@@ -1,29 +1,109 @@
 .container {
   &__contact {
     height: 1026px;
-    background-image: url("../../assets/Background-Contact-Form.jpg");
     display: flex;
-    flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    padding-right: 50px;
+    background-image: url("../../assets/Background-Contact-Form.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: auto;
+    &_left {
+      height: 100%;
+      flex-grow: 2;
+    }
+    &_right {
+      z-index: 1;
+      opacity: 1;
+      height: 100%;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    &_footer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 120px;
+      span {
+        margin: 0 auto;
+        font-size: 18px;
+      }
+      img {
+        padding-right: 50px;
+      }
+    }
   }
 }
 
 .right__header {
+
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-right: 142px;
+  width: 528px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   h5 {
-    display: block;
-    margin: 20px;
-    font-size: 52px;
+    font-size: 38px;
     font-weight: lighter;
     text-align: center;
   }
 }
 
-.container__contact_right {
+.right {
+  &__form {
+    font-size: 22px;
+    width: 528px;
+    margin-right: 142px;
+    &-inputs {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    input {
+      font-size: 18px;
+      height: 3em;
+      border: transparent;
+      border-bottom: 1px solid $color-lightgrey;
+      background-color: transparent;
+    }
+  }
+}
+
+.input__name, .input__email, .input__textarea {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  //justify-content: center;
-  align-items: flex-end;
-  height: 1000px;
+  margin-bottom: 20px;
+}
+
+.input__name, .input__email {
+  width: 45%;
+}
+.input__textarea {
+  textarea {
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid $color-lightgrey;
+    font-size: 18px;
+    height: 7em;
+    margin-top: 20px;
+
+  }
+
+}
+
+
+.btn {
+  font-size: 1em;
+  width: 10em;
+  height: 3em;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+
 }

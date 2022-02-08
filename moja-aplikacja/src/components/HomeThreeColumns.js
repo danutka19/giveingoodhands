@@ -1,9 +1,8 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 
 export const HomeThreeColumns = () => {
     return (
-
-        <div className="container container__columns">
+        <section className="container container__columns">
             <div className="container__columns-detail">
                 <div id="bags">10</div>
                 <span>Oddanych worków</span>
@@ -28,6 +27,6 @@ export const HomeThreeColumns = () => {
                     possimus sequi.
                 </article>
             </div>
-        </div>
+        </section>
     )
 }

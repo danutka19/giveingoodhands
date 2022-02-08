@@ -1,6 +1,8 @@
-import React, {useEffect, useState} from "react";
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import React from "react";
 import img from '../assets/Decoration.svg'
+import {Link} from "react-router-dom";
+import { Link as Scroll } from 'react-scroll';
+
 
 export const HomeHeader = () => {
     return (
@@ -11,27 +13,27 @@ export const HomeHeader = () => {
                     <nav>
                         <ul className={"nav__header"}>
                             <li>
-                                <a href className="nav__header-detail">Zaloguj</a>
+                                <Link to="/login">Zaloguj</Link>
                             </li>
                             <li>
-                                <a href className="nav__header-detail">Załóż konto</a>
+                                <Link to="/register">Załóż konto</ Link>
                             </li>
-
                         </ul>
                         <ul className={"nav__header"}>
                             <li>
-                                <a href className="nav__header-detail">Start</a></li>
+                                <Link to="/">Start</Link>
+                            </li>
                             <li>
                                 <a href className="nav__header-detail">O co chodzi</a>
                             </li>
                             <li>
-                                <a href className="nav__header-detail">O nas</a>
+                                <Scroll smooth className="nav__header-detail" to="aboutus">O nas</Scroll>
                             </li>
                             <li>
-                                <a href className="nav__header-detail">Fundacja i organizacje</a>
+                                <Scroll smooth className="nav__header-detail" to="organizations">Fundacje i organizacje</Scroll>
                             </li>
                             <li>
-                                <a href className="nav__header-detail">Kontakt</a>
+                                <Scroll smooth className="nav__header-detail" to="contactus">Kontakt</Scroll>
                             </li>
                         </ul>
                     </nav>
@@ -44,8 +46,10 @@ export const HomeHeader = () => {
                     <div><img src={img}/></div>
                 </div>
                 <div className="container__ul">
-                        <div>Oddaj rzeczy</div>
-                        <div>Zorganizuj zbiórkę</div>
+                        <div>
+                            <Link to="/login" className="btn" >Oddaj rzeczy</Link>
+                        </div>
+                        <div className="btn">Zorganizuj zbiórkę</div>
                 </div>
             </div>
         </section>
