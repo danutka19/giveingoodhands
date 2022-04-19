@@ -26,9 +26,10 @@ export const LogOut = () => {
                     </ul>
                     <ul className={"nav__header"}>
                         <li>
-                            <Link className="nav__header-detail" to="/">Start</Link></li>
+                            <Link className="nav__header-detail" to="/">Start</Link>
+                        </li>
                         <li>
-                            <a href className="nav__header-detail">O co chodzi</a>
+                            <Link className="nav__header-detail" to="/">O co chodzi</Link>
                         </li>
                         <li>
                             <Scroll smooth className="nav__header-detail" to="aboutus">O nas</Scroll>

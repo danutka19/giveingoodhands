@@ -67,14 +67,13 @@ export const LoginIn = () => {
                         <li>
                             <Link className="nav__header-detail" to="/">Start</Link></li>
                         <li>
-                            <a href className="nav__header-detail">O co chodzi</a>
+                            <Link className="nav__header-detail" to="/">O co chodzi</Link>
                         </li>
                         <li>
                             <Link className="nav__header-detail" to="/">O nas</Link>
                         </li>
                         <li>
-                            <Link className="nav__header-detail" to="/">Fundacje i
-                                organizacje</Link>
+                            <Link className="nav__header-detail" to="/">Fundacje i organizacje</Link>
                         </li>
                         <li>
                             <Link className="nav__header-detail" to="/">Kontakt</Link>

@@ -10,8 +10,8 @@ export const HomeAboutUs = () => {
     return (
         <>
         <Element name="aboutus"> </Element>
-        <section className={"container container__about"}>
-            <div className={"container__about-left"}>
+        <section className="container container__about">
+            <div className="container__about-left">
                 <h4>O nas</h4>
                 <div><img src={img}/></div>
                 <article>

@@ -15,25 +15,25 @@ export const HomeFourSteps = () => {
                 <div className="step__bar">
                     <div><img src={icon1} /></div>
                     <span>Wybierz rzeczy</span>
-                    <div className="step__line"></div>
+                    <div className="step__line"> </div>
                     <article>ubrania, zabawki, sprzęt i inne</article>
                 </div>
                 <div className="step__bar">
                     <div><img src={icon2} /></div>
                     <span>Spakuj je</span>
-                    <div className="step__line"></div>
+                    <div className="step__line"> </div>
                     <article>skorzystaj z worków na śmieci</article>
                 </div>
                 <div className="step__bar">
                     <div><img src={icon3}/></div>
                     <span>Zdecyduj komu chcesz pomóc</span>
-                    <div className="step__line"></div>
+                    <div className="step__line"> </div>
                     <article>wybierz zaufane miejsce</article>
                 </div>
                 <div className="step__bar">
                     <div><img src={icon4}/></div>
                     <span>Zamów kuriera</span>
-                    <div className="step__line"></div>
+                    <div className="step__line"> </div>
                     <article>kurier przyjedzie w dogodnym terminie</article>
                 </div>
             </div>

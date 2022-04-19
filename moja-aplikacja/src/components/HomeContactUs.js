@@ -80,64 +80,65 @@ export const HomeContactUs = () => {
         <>
             <Element name="contactus"> </Element>
             <section className={"container container__contact"}>
-                <div className="container__contact_left"> </div>
+                <div className="container__contact_left"></div>
                 <div className="container__contact_right">
                     <div className="right__header">
                         <h5>Skontaktuj się z nami</h5>
                         <div><img src={img}/></div>
                     </div>
                     {success ? <div>Wiadomość została wysłana, wkrótce się odezwiemy
-                        <p>Zapraszamy do naszej społeczności</p>
-                        <div className="form__button">
-                            <button className="btn">
-                                <Link to="/register">Załóż konto</ Link>
-                            </button>
+                            <p>Zapraszamy do naszej społeczności</p>
+                            <div className="form__button">
+                                <button className="btn">
+                                    <Link to="/register">Załóż konto</Link>
+                                </button>
+                            </div>
+                            <button className="btn" onClick={() => setSuccess(false)}>Wyślij jeszcze raz</button>
                         </div>
-                        <button className="btn" onClick={() => setSuccess(false)}>Wyślij jeszcze raz</button></div> : (
-                        <div className="right__form">
-                            <form action="" className="right__form-details" onSubmit={handleSubmit}>
-                                <div className="right__form-inputs">
-                                    <div className="input__name">
-                                        <label>Wpisz swoje imię</label>
-                                        <input placeholder="Krzysztof"
-                                               type="text"
-                                               value={name}
-                                               onChange={e => setName(e.target.value)}
-                                        />
+                        : (<div className="right__form">
+                                <form className="right__form-details" onSubmit={handleSubmit}>
+                                    <div className="right__form-inputs">
+                                        <div className="input__name">
+                                            <label>Wpisz swoje imię</label>
+                                            <input placeholder="Krzysztof"
+                                                   type="text"
+                                                   value={name}
+                                                   onChange={e => setName(e.target.value)}
+                                            />
+                                        </div>
+                                        <div className="input__email">
+                                            <label>Wpisz swój email</label>
+                                            <input placeholder="abc@xyz.com"
+                                                   type="text"
+                                                   value={email}
+                                                   onChange={e => setEmail(e.target.value)}
+                                            />
+                                        </div>
                                     </div>
-                                    <div className="input__email">
-                                        <label>Wpisz swój email</label>
-                                        <input placeholder="abc@xyz.com"
-                                               type="text"
-                                               value={email}
-                                               onChange={e => setEmail(e.target.value)}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="input__textarea">
-                                    <label>Wpisz swoją wiadomość</label>
-                                    <textarea name="" id="" cols="20" rows="5"
-                                              placeholder={text}
-                                              value={message}
-                                              onChange={e => setMessage(e.target.value)}>
+                                    <div className="input__textarea">
+                                        <label>Wpisz swoją wiadomość</label>
+                                        <textarea name="messageToSend" id="sendMessage" cols="20" rows="5"
+                                                  placeholder={text}
+                                                  value={message}
+                                                  onChange={e => setMessage(e.target.value)}>
                             </textarea>
-                                </div>
-                                <button className="btn" type="submit">Wyślij</button>
-                            </form>
-                            <ul>
-                                {errors.map(err => (
-                                    <li key={err}>{err}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    )}
+                                    </div>
+                                    <button className="btn" type="submit">Wyślij</button>
+                                </form>
+                                <ul>
+                                    {errors.map(err => (
+                                        <li key={err}>{err}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
 
                 </div>
             </section>
             <section className={"container container__contact_footer"}>
                 <span> Copyright by Coders Lab</span>
-                <img src={facebook} />
-                <img src={instagram} />
+                <img src={facebook}/>
+                <img src={instagram}/>
             </section>
         </>
     )

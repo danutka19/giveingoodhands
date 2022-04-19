@@ -7,11 +7,11 @@ import { Link as Scroll } from 'react-scroll';
 export const HomeHeader = () => {
     return (
         <section className={"container container__header"} >
-            <div className={"container__image"}> </div>
-            <div className={"container__right"}>
+            <div className="container__image"> </div>
+            <div className="container__right">
                 <div className="container__nav">
                     <nav>
-                        <ul className={"nav__header"}>
+                        <ul className="nav__header">
                             <li>
                                 <Link to="/login">Zaloguj</Link>
                             </li>
@@ -19,12 +19,12 @@ export const HomeHeader = () => {
                                 <Link to="/register">Załóż konto</ Link>
                             </li>
                         </ul>
-                        <ul className={"nav__header"}>
+                        <ul className="nav__header">
                             <li>
                                 <Link to="/">Start</Link>
                             </li>
                             <li>
-                                <a href className="nav__header-detail">O co chodzi</a>
+                                <Link className="nav__header-detail" to="/">O co chodzi</Link>
                             </li>
                             <li>
                                 <Scroll smooth className="nav__header-detail" to="aboutus">O nas</Scroll>
@@ -37,7 +37,6 @@ export const HomeHeader = () => {
                             </li>
                         </ul>
                     </nav>
-
                 </div>
                 <div className="container__title">
                     <h2>Zacznij pomagać!

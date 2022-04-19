@@ -32,7 +32,7 @@ export const HomeOrganizations = () => {
     const paginatedList = list.slice(page * 3, page * 3 + 3);
 
     const paginate = () => new Array(Math.ceil(list.length / 3)).fill(null).map((_, i) => (
-        <li key={i+2} onClick={() => setPage(i)} >{i + 1}</li>
+        <li key={i+2} onClick={() => setPage(i)}>{i + 1}</li>
     ))
     const text = "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują."
 
@@ -52,8 +52,8 @@ export const HomeOrganizations = () => {
             <ul>
                 {paginatedList.map((el, index) => {
                     return (
-                        <div className="container__organizations-name">
-                            <li key={el.id}>{el.name}
+                        <div className="container__organizations-name" key={el.id}>
+                            <li>{el.name}
                                 <span>Cel i misja: {el.description}</span>
                             </li>
                             <span>{el.needs}</span>

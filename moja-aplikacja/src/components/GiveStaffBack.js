@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import {Step1} from "./givestaffback/step1";
-import {Step2} from "./givestaffback/step2";
 import img from "../assets/Decoration.svg";
 
 export const GiveStaffBack = () => {
@@ -12,8 +11,6 @@ export const GiveStaffBack = () => {
     }
 
     return (
-
-
             <section className="container">
             <div className="container__nav">
                 <nav>
@@ -52,7 +49,5 @@ export const GiveStaffBack = () => {
                     {step1 ? <Step1 handleStep1={onStep1} /> : null}
                 </div>
             </section>
-
-
     )
 }

@@ -19,9 +19,3 @@ function App() {
 }
 
 export default App;
-
-// <Routes>
-//   <Route path="/" element={<HoistPage onNewCapacity={addNewCapacity} />} />
-//   <Route path="drawing" element={<BodyPage drawingP={drawing} capacityP={capacityX} addToBasket={onNewNumbers} />} />
-//   <Route path="order" element={<FormOrder drawingP={drawing} sparesP={spares} />} />
-// </Routes>

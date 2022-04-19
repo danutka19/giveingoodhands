@@ -68,17 +68,17 @@ export const Register = () => {
                         <li>
                             <Link className="nav__header-detail" to="/">Start</Link></li>
                         <li>
-                            <a href className="nav__header-detail">O co chodzi</a>
+                            <Link className="nav__header-detail" to="/">O co chodzi</Link>
                         </li>
                         <li>
-                            <Scroll smooth className="nav__header-detail" to="aboutus">O nas</Scroll>
+                            <Link className="nav__header-detail" to="/">O nas</Link>
                         </li>
                         <li>
-                            <Scroll smooth className="nav__header-detail" to="organizations">Fundacje i
-                                organizacje</Scroll>
+                            <Link className="nav__header-detail" to="/">Fundacje i
+                                organizacje</Link>
                         </li>
                         <li>
-                            <Scroll smooth className="nav__header-detail" to="contactus">Kontakt</Scroll>
+                            <Link className="nav__header-detail" to="/">Kontakt</Link>
                         </li>
                     </ul>
                 </nav>
@@ -109,10 +109,9 @@ export const Register = () => {
                     </div>
                 </div>
                 <div className="form__button">
-
                     <button className="btn">
                         <Link to="/login">Zaloguj się</ Link>
-                        </button>
+                    </button>
                     <button className="btn" type="submit">Załóż konto</button>
                 </div>
 
